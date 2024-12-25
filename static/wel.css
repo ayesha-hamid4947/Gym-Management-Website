@@ -1,0 +1,126 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh; /* Ensure full viewport height */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* Vertically center */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    padding: 20px; /* For spacing on small screens */
+}
+
+/* Container to keep the content centered */
+.welcome-container {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    text-align: center; /* Center text inside */
+    max-width: 80%; /* Limit width on large screens */
+    padding: 20px;
+}
+
+/* Logo container */
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text container */
+.welcome-text {
+    color: white;
+    max-width: 80%; /* Limit width on large screens */
+    padding: 20px;
+}
+
+.welcome-text h1 {
+    font-size: 3rem; /* Default size */
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Call to Action Button */
+.cta-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices like smartphones */
+@media (max-width: 768px) {
+    .welcome-text h1 {
+        font-size: 2rem; /* Smaller heading */
+    }
+
+    .welcome-text p {
+        font-size: 1rem; /* Smaller text */
+    }
+
+    .cta-button {
+        padding: 8px 16px; /* Adjust button padding */
+        font-size: 1em;
+    }
+}
+
+/* For extra small devices like phones in portrait mode */
+@media (max-width: 480px) {
+    .welcome-text h1 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .welcome-text p {
+        font-size: 0.9rem; /* Further reduce text size */
+    }
+
+    .cta-button {
+        width: 100%; /* Make button full width */
+        padding: 12px;
+    }
+}
+
+/* For medium devices (tablets, etc.) */
+@media (max-width: 1024px) {
+    .welcome-text h1 {
+        font-size: 2.5rem; /* Slightly smaller for tablets */
+    }
+
+    .welcome-text p {
+        font-size: 1.1rem; /* Adjust text for medium screens */
+    }
+}

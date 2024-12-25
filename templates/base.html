@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 Gym Management</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('membership') }}">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#" class="social-icon">Facebook</a></li>
+              <li><a href="#" class="social-icon">Twitter</a></li>
+              <li><a href="#" class="social-icon">LinkedIn</a></li>
+              <li><a href="#" class="social-icon">Instagram</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>123 Business St., City, Country</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@company.com</p>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Business Hours</h4>
+            <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
+            <p>Sat-Sun: Closed</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2024 Company Name. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
